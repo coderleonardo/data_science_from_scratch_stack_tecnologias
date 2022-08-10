@@ -57,6 +57,18 @@ Para o tratamento de variáveis do tipo texto (*pré processamento dos dados*) p
 
 #### 9.0 Lidando com Classes Desbalanceadas e entendo a Validação Cruzada
 
+Classes desbalanceadas ocorrem quando temos um número muito maior de amostras de uma classe do que outra. Um exemplo simples desse caso é quando estamos tentando classificar se uma transação de cartão de crédito é ou não fraudulenta. Neste caso existem muito mais transações *não* fraudulentas do que fraudulentas.
+Quando temos este tipo de situação pode ocorrer de nosso algoritmo de classificação performar melhor sobre um tipo de classe em detrimento da outra, de modo que o balanceamento entre as classes se faz necessário.
+
+Alguns métodos para balanceamento de classes são:
+
+	- Undersampling (NearMiss): consiste em reduzirmos de modo aleatório o número de exemplos da classe majoritária.
+	
+	- Oversampling: consiste em replicar de modo aleatório os dados da classe minoritária.
+		- Smote: método de oversampling que gera dados sintéticos da classe minoritária.
+		
+	- Feature Engineering: processo de geração de novas features de modo a dar mais robustez para o modelo de aprendizado de máquina.
+
 #### 9.1 K-Nearst Neighboors
 
 #### 9.2 Regressão Linear
