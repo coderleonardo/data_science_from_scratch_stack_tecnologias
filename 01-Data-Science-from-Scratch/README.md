@@ -81,7 +81,9 @@ No caso, é uma técnica que consiste em dividir nossos dados em *k folds* que s
 
 Por exemplo, se temos um conjunto de dados e escolhemos nosso k=5, então faremos 5 divisões dos nossos dados de modo a usar 1 divisão para teste e 4 para treino, durante 5 etapas, como mostrado na imagem abaixo.
 
-![Cross Validation (from sklearn)](grid_search_cross_validation.png)
+</p>Cross Validation (from sklearn)
+<img src="grid_search_cross_validation.png" alt="grid_search_cross_validation" width="400px"/>
+<p/>
 
 #### 9.1 K-Nearst Neighboors (KNN)
 
@@ -90,7 +92,9 @@ O valor *k* determina o número de vizinhos que serão usados como comparação 
 
 De modo geral, para cada nova amostra calculamos sua distância em relação a todos os pontos do dataset, após isso retorno o conjunto dos *k* pontos mais próximos e classificamos a nova amostra de acordo com a classe mais presente neste conjunto.
 
-![KNN - Classifica a nova amostra como sendo a classe que mais aparece no conjunto de *k* pontos](knn.png)
+</p>KNN - Classifica a nova amostra como sendo a classe que mais aparece no conjunto de *k* pontos
+<img src="knn.png" alt="knn" width="300px"/>
+<p/>
 
 #### 9.2 Regressão Linear
 
