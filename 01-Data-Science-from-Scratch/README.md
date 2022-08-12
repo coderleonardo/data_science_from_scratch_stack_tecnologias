@@ -57,6 +57,8 @@ Para o tratamento de variáveis do tipo texto (*pré processamento dos dados*) p
 
 #### 9.0 Lidando com Classes Desbalanceadas e entendo a Validação Cruzada
 
+##### Classes desbalanceadas
+
 Classes desbalanceadas ocorrem quando temos um número muito maior de amostras de uma classe do que outra. Um exemplo simples desse caso é quando estamos tentando classificar se uma transação de cartão de crédito é ou não fraudulenta. Neste caso existem muito mais transações *não* fraudulentas do que fraudulentas.
 Quando temos este tipo de situação pode ocorrer de nosso algoritmo de classificação performar melhor sobre um tipo de classe em detrimento da outra, de modo que o balanceamento entre as classes se faz necessário.
 
@@ -68,8 +70,27 @@ Alguns métodos para balanceamento de classes são:
 		- Smote: método de oversampling que gera dados sintéticos da classe minoritária.
 		
 	- Feature Engineering: processo de geração de novas features de modo a dar mais robustez para o modelo de aprendizado de máquina.
+	
+Note que podemos avaliar se nosso algoritmo de aprendizado está sendo afetado negativamente pelo desbalanceamento entre as classes olhando paras as métricas *precision*, *recall* e *confusion_matrix*, que avaliam como o modelo performa em cada classe.
 
-#### 9.1 K-Nearst Neighboors
+##### Validação Cruzada
+
+Validação Cruzada é um técnica que permite eliminar a variância sobre o nosso conjunto de treino e teste.
+
+No caso, é uma técnica que consiste em dividir nossos dados em *k folds* que serão o número de grupos usados para treino e teste. 
+
+Por exemplo, se temos um conjunto de dados e escolhemos nosso k=5, então faremos 5 divisões dos nossos dados de modo a usar 1 divisão para teste e 4 para treino, durante 5 etapas, como mostrado na imagem abaixo.
+
+![Cross Validation (from sklearn)](grid_search_cross_validation.png)
+
+#### 9.1 K-Nearst Neighboors (KNN)
+
+KNN é um algoritmo majoritariamente usado para classificação baseado em distância (usualmente a euclidiana, mas podemos ter outras). Sua hiótese básica é que dados semelhantes devem estar no mesmo espaço de dispersão.
+O valor *k* determina o número de vizinhos que serão usados como comparação para determinar a classe de uma nova amostra.
+
+De modo geral, para cada nova amostra calculamos sua distância em relação a todos os pontos do dataset, após isso retorno o conjunto dos *k* pontos mais próximos e classificamos a nova amostra de acordo com a classe mais presente neste conjunto.
+
+![KNN - Classifica a nova amostra como sendo a classe que mais aparece no conjunto de *k* pontos](knn.png)
 
 #### 9.2 Regressão Linear
 
