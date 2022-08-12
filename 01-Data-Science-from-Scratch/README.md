@@ -112,10 +112,11 @@ Além da regressão linear, que olha somente para uma dimensão, podemos ter tam
 ##### Hipóteses para a regressão linear
 
 Para usarmos a regressão linear devemos ter satisfeitas as seguintes hipóteses:
-	1 - Linearidade entre os dados,
-	2 - Independência entre os resíduos, i.e., não deve existir correlação entre os resíduos,
-	3 - Invariância dos resíduos,
-	4 - Normalidade dos resíduos, i.e., os resíduos do modelo devem seguir uma distribuição normal.
+
+		1 - Linearidade entre os dados,
+		2 - Independência entre os resíduos, i.e., não deve existir correlação entre os resíduos,
+		3 - Invariância dos resíduos,
+		4 - Normalidade dos resíduos, i.e., os resíduos do modelo devem seguir uma distribuição normal.
 
 
 
