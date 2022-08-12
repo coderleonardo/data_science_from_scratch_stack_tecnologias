@@ -100,12 +100,12 @@ De modo geral, este algoritmo busca achar os melhores parâmetros *w* e *b* da r
 
 Podemos avaliar se um modelo do tipo regressão linear (de modo mais geral, qualquer tipo de modelo de regressão) está performando bem olhando para as seguintes métricas:
 	- Mean Square Error (ou Erro Quadrático Médio): esta medida retorna o quanto estamos errando em nossa predição (yhat) com relação aos valores reais (y)
-		$$ MSE = \sum_{i=1}^n (y_{i}-ihat{i})^2 / n$$
+		$$MSE = \sum_{i=1}^n (y_{i}-ihat{i})^2 / n$$
 		
 	- Root Mean Square Error (raiz do MSE): medida mais intuitiva já que está na mesma unidade da variável resposta y
-		$$ RMSE = \sqrt{MSE} $$
+		$$RMSE = \sqrt{MSE}$$
 		
-Além da regressão linear, que olha somente para uma dimensão, podemos ter também a *regressão multilinear*, que basicamente recebe mais de um valor de entrada e busca o melhor hiperplano que descreve nosso conjunto de dados: $$ y = w_1*x_1 + \cdots + w_m*x_m + b$$.
+Além da regressão linear, que olha somente para uma dimensão, podemos ter também a *regressão multilinear*, que basicamente recebe mais de um valor de entrada e busca o melhor hiperplano que descreve nosso conjunto de dados: $$y = w_1*x_1 + \cdots + w_m*x_m + b$$.
 
 ##### Hipóteses para a regressão linear
 
