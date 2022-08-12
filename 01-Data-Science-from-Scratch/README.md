@@ -80,7 +80,6 @@ Validação Cruzada é um técnica que permite eliminar a variância sobre o nos
 No caso, é uma técnica que consiste em dividir nossos dados em *k folds* que serão o número de grupos usados para treino e teste. 
 
 Por exemplo, se temos um conjunto de dados e escolhemos nosso k=5, então faremos 5 divisões dos nossos dados de modo a usar 1 divisão para teste e 4 para treino, durante 5 etapas, como mostrado na imagem abaixo.
-
 </p>Cross Validation (from sklearn)
 <img src="grid_search_cross_validation.png" alt="grid_search_cross_validation" width="400px"/>
 <p/>
@@ -91,7 +90,6 @@ KNN é um algoritmo majoritariamente usado para classificação baseado em dist�
 O valor *k* determina o número de vizinhos que serão usados como comparação para determinar a classe de uma nova amostra.
 
 De modo geral, para cada nova amostra calculamos sua distância em relação a todos os pontos do dataset, após isso retorno o conjunto dos *k* pontos mais próximos e classificamos a nova amostra de acordo com a classe mais presente neste conjunto.
-
 </p>KNN - Classifica a nova amostra como sendo a classe que mais aparece no conjunto de *k* pontos
 <img src="knn.png" alt="knn" width="300px"/>
 <p/>
@@ -104,7 +102,7 @@ De modo geral, este algoritmo busca achar os melhores parâmetros *w* e *b* da r
 
 Podemos avaliar se um modelo do tipo regressão linear (de modo mais geral, qualquer tipo de modelo de regressão) está performando bem olhando para as seguintes métricas:
 	- Mean Square Error (ou Erro Quadrático Médio): esta medida retorna o quanto estamos errando em nossa predição (yhat) com relação aos valores reais (y)
-		$$MSE = \sum_{i=1}^n (y_{i}-ihat{i})^2 / n$$
+		$$MSE = \sum_{i=1}^n (y_{i}-yhat_i)^2 / n$$
 		
 	- Root Mean Square Error (raiz do MSE): medida mais intuitiva já que está na mesma unidade da variável resposta y
 		$$RMSE = \sqrt{MSE}$$
