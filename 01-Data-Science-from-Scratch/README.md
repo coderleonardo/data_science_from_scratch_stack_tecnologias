@@ -94,6 +94,29 @@ De modo geral, para cada nova amostra calculamos sua distância em relação a t
 
 #### 9.2 Regressão Linear
 
+Regressão Linear é um algoritmo para regressão (ou previsão de valores contínuos) que busca escolher a melhor reta que modela um conjunto de dados. 
+De modo geral, este algoritmo busca achar os melhores parâmetros *w* e *b* da reta $$y = w*X + b$$ que se ajusta a um conjunto de dados. 
+![Melhor reta que se adequa ao conjunto de dados em questão.](linearregression.png)
+
+Podemos avaliar se um modelo do tipo regressão linear (de modo mais geral, qualquer tipo de modelo de regressão) está performando bem olhando para as seguintes métricas:
+	- Mean Square Error (ou Erro Quadrático Médio): esta medida retorna o quanto estamos errando em nossa predição (yhat) com relação aos valores reais (y)
+		$$ MSE = \sum_{i=1}^n (y_{i}-ihat{i})^2 / n$$
+		
+	- Root Mean Square Error (raiz do MSE): medida mais intuitiva já que está na mesma unidade da variável resposta y
+		$$ RMSE = \sqrt{MSE} $$
+		
+Além da regressão linear, que olha somente para uma dimensão, podemos ter também a *regressão multilinear*, que basicamente recebe mais de um valor de entrada e busca o melhor hiperplano que descreve nosso conjunto de dados: $$ y = w_1*x_1 + \cdots + w_m*x_m + b$$.
+
+##### Hipóteses para a regressão linear
+
+Para usarmos a regressão linear devemos ter satisfeitas as seguintes hipóteses:
+	1 - Linearidade entre os dados,
+	2 - Independência entre os resíduos, i.e., não deve existir correlação entre os resíduos,
+	3 - Invariância dos resíduos,
+	4 - Normalidade dos resíduos, i.e., os resíduos do modelo devem seguir uma distribuição normal.
+
+
+
 #### 9.3 Regressão Logística
 
 #### 9.4 SVM
