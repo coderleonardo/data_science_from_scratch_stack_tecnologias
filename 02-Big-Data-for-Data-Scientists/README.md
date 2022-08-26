@@ -3,7 +3,7 @@
 ## Batch Processing vs Streaming
 
 ### Batch Processing
-Batch Processing (ou Processamento em Lotes) é um método de processamento de alto volume de dados com o mínimo de interação humana possível.
+[Batch Processing](https://www.talend.com/resources/batch-processing/) (ou Processamento em Lotes) é um método de processamento de alto volume de dados com o mínimo de interação humana possível.
 Neste tipo de processamento, coletamos e armazenamos os dados, e então processamos os mesmos no que chamamos de "*batch window*".
 
 Um exemplo de processamento em lote seria uma transação bancária que só apareceria no histórico da conta alguns dias depois (janela de 
@@ -13,7 +13,7 @@ Processamento em *batch* nos permite uma melhor governança sobre os recursos co
 tarefas, uma vez que o evento de coletar e armazenar grandes volumes de dados pode ser programado.
 
 ### Real-Time Data Streaming
-Real-Time Streaming (ou Processamento em tempo real) é um modelo de coleta, armazenamento e processamento de dados que busca executar tais
+[Real-Time Streaming](https://hazelcast.com/glossary/real-time-stream-processing/) (ou Processamento em tempo real) é um modelo de coleta, armazenamento e processamento de dados que busca executar tais
 tarefas à medida em que os dados são disponibilizados. 
 
 Por exemplo, uma transação bancária na qual recebemos instantes após uma notificação sobre a mesma é um exemplo de processamento em "tempo 
